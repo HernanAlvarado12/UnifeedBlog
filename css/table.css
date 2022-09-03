@@ -1,0 +1,36 @@
+@media (min-width: 624px){
+    .navbar__image--none {
+        display: none;
+    }
+
+    .navbar__list__none {
+        display: flex;
+        list-style: none;
+    }
+
+    .list__alink {
+        margin-left: 1.5rem;
+        color: var(--gray);
+        font-weight: 500;
+        font-size: var(--medium);
+    }
+
+    .list__alink--background {
+        padding: 1.2rem 1.3rem;
+        color: var(--black);
+        font-weight: bolder;
+        border-radius: 0.6rem;
+        background-color: var(--orange);
+    }
+
+    .header__navbar {
+        height: 10rem;
+    }
+
+    .footer__container {
+        height: 5rem;
+        margin: 5rem 0 1rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

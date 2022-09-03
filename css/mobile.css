@@ -1,6 +1,7 @@
 :root {
     --gray: #626262;
     --black: #030303;
+    --orange: #ee7c0e;
     --large: 2.8rem;
     --medium: 1.4rem;
     --small: 1.2rem;
@@ -17,12 +18,16 @@ html {
     font-family: 'Manrope', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 
 .body__container {
     width: 90%;
+    max-width: 120rem;
 }
 
-.container--height {
+.header__navbar {
     height: 8rem;
 }
 
@@ -62,6 +67,7 @@ html {
     margin: 1rem 0;
     color: var(--gray);
     line-height: 1.6;
+    font-weight: 400;
     font-size: var(--medium);
 }
 
@@ -78,15 +84,28 @@ html {
     font-size: var(--small);
 }
 
+.figcap__title {
+    color: var(--black);
+}
+
+.figcap__span {
+    color: var(--gray);
+}
+
 .element--flex--direction, .container--flex--direction {
     flex-direction: column;
 }
 
 .footer__container {
+    height: 8rem;
     margin: 3rem 0 2rem 0;
 }
 
 .footer__image {
     width: 9rem;
     height: 3rem;
+}
+
+.navbar__list__none {
+    display: none;
 }

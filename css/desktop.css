@@ -1,0 +1,44 @@
+@media (min-width: 995px){
+    :root {
+        --large: 3.2rem;
+        --medium: 1.8rem;
+        --small: 1.4rem;
+    }
+
+    .main__container {
+        margin-top: 3rem;
+        column-gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main__article__title {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .article__alink {
+        display: grid;
+        column-gap: 4rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .article__image {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+
+    .article__title {
+        margin: 0;   
+    }
+
+    .article__figure--height {
+        height: 5rem;
+    }
+
+    .article__figure {
+        margin-top: 2rem;
+    }
+
+    .footer__copyright {
+        font-size: 1.4rem;
+    }
+}

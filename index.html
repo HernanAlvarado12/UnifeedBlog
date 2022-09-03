@@ -12,69 +12,83 @@
         <link href ="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel ="stylesheet">
         <link rel ="stylesheet" href ="./css/mobile.css">
         <link rel ="stylesheet" media ="screen and (min-width: 624px)" href ="./css/table.css">
-        <link rel ="stylesheet" media ="screen and (min-width: 1024px)" href ="./css/desktop.css">
+        <link rel ="stylesheet" media ="screen and (min-width: 995px)" href ="./css/desktop.css">
     </head>
 
     <body class ="body__container container--margin-auto">
 
         <header>
-            <nav class ="container--height container--flex container--flex--align container--flex--justify">
+            <nav class ="header__navbar container--flex container--flex--align container--flex--justify">
                 <img src ="./assets/logo.svg" alt ="Logo de la pagina web" loading ="lazy">
-                <img src ="./assets/menu.svg" alt ="icono de menu" loading ="lazy">
+                <img class ="navbar__image--none" src ="./assets/menu.svg" alt ="icono de menu" loading ="lazy">
+                <ul class ="navbar__list__none">
+                    <li><a class ="list__alink" href ="">Home</a></li>
+                    <li><a class ="list__alink" href ="">Features</a></li>
+                    <li><a class ="list__alink" href ="">Pricing</a></li>
+                    <li><a class ="list__alink list__alink--background" href ="">Subscribe</a></li>
+                </ul>
             </nav>
         </header>
 
         <main class ="main__container">
-            <article>
-                <img class ="article__image" src ="./assets/social_media.png" alt ="Photo of social media" loading ="lazy">
-                <h2 class ="article__title">Weekly Newsletter: Tweers for Higher Engagements</h2>
-                <p class ="article__content">
-                    In this weekdly newsletter, we will be covering types of engaging tweets. 
-                    This is the guide if you're just starting out on Twitter.
-                </p>
-                <figure class ="container--flex container--flex--align container--flex--column-gap">
-                    <img class ="figure__image" src ="./assets/user.png" alt ="Photo of profile of user" loading ="lazy">
-                    <figcaption>
-                        <h4 class ="element--size-small">Jessica Andrews</h4>
-                        <span class ="element--size-small">Content Manager</span>
-                    </figcaption>
-                </figure>
+            <article class ="main__article__title">
+                <a class ="article__alink" href ="">
+                    <img class ="article__image" src ="./assets/social_media.png" alt ="Photo of social media" loading ="lazy">
+                    <h2 class ="article__title">Weekly Newsletter: Tweers for Higher Engagements</h2>
+                    <p class ="article__content">
+                        In this weekdly newsletter, we will be covering types of engaging tweets. 
+                        This is the guide if you're just starting out on Twitter.
+                    </p>
+                    <figure class ="article__figure--height container--flex container--flex--align container--flex--column-gap">
+                        <img class ="figure__image" src ="./assets/user.png" alt ="Photo of profile of user" loading ="lazy">
+                        <figcaption>
+                            <h4 class ="element--size-small figcap__title">Jessica Andrews</h4>
+                            <span class ="element--size-small figcap__span">Content Manager</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </article>
             <article>
-                <img class ="article__image" src ="./assets/phone.png" alt ="Photo of social media" loading ="lazy">
-                <h2 class ="article__title">7 tips for Organic Traffic</h2>
-                <p class ="article__content">From SEO to integrating with Paid Advertising, this article covers it all.</p>
-                <figure class ="container--flex container--flex--align container--flex--column-gap" loading ="lazy">
-                    <img class ="figure__image" src ="./assets/avatar_1.png" alt ="Photo of profile of user">
-                    <figcaption>
-                        <h4 class ="element--size-small">Spencer David</h4>
-                        <span class ="element--size-small">SEO Sepecialis</span>
-                    </figcaption>
-                </figure>
+                <a href ="">
+                    <img class ="article__image" src ="./assets/phone.png" alt ="Photo of social media" loading ="lazy">
+                    <h2 class ="article__title">7 tips for Organic Traffic</h2>
+                    <p class ="article__content">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+                    <figure class ="article__figure container--flex container--flex--align container--flex--column-gap" loading ="lazy">
+                        <img class ="figure__image" src ="./assets/avatar_1.png" alt ="Photo of profile of user">
+                        <figcaption>
+                            <h4 class ="element--size-small figcap__title">Spencer David</h4>
+                            <span class ="element--size-small figcap__span">SEO Sepecialis</span>
+                        </figcaption>
+                    </figure>  
+                </a>           
             </article>
             <article>
-                <img class ="article__image" src ="./assets/laptop.png" alt ="Photo of social media" loading ="lazy">
-                <h2 class ="article__title">How To Start Your Own Business</h2>
-                <p class ="article__content">Starting your own business in 2022 has never been easier.</p>
-                <figure class ="container--flex container--flex--align container--flex--column-gap">
-                    <img class ="figure__image" src ="./assets/avatar_2.png" alt ="Photo of profile of user" loading ="lazy">
-                    <figcaption>
-                        <h4 class ="element--size-small">Sara Frey</h4>
-                        <span class ="element--size-small">Business Leader</span>
-                    </figcaption>
-                </figure>
+                <a href ="">
+                    <img class ="article__image" src ="./assets/laptop.png" alt ="Photo of social media" loading ="lazy">
+                    <h2 class ="article__title">How To Start Your Own Business</h2>
+                    <p class ="article__content">Starting your own business in 2022 has never been easier.</p>
+                    <figure class ="article__figure container--flex container--flex--align container--flex--column-gap">
+                        <img class ="figure__image" src ="./assets/avatar_2.png" alt ="Photo of profile of user" loading ="lazy">
+                        <figcaption>
+                            <h4 class ="element--size-small figcap__title">Sara Frey</h4>
+                            <span class ="element--size-small figcap__span">Business Leader</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </article>
             <article>
-                <img class ="article__image" src ="./assets/articles.png" alt ="Photo of social media" loading ="lazy">
-                <h2 class ="article__title">5 tips for Better Branding</h2>
-                <p class ="article__content">From SEO to integrating with Paid Advertising, this article covers it all.</p>
-                <figure class ="container--flex container--flex--align container--flex--column-gap" loading ="lazy">
-                    <img class ="figure__image" src ="./assets/avatar_3.png" alt ="Photo of profile of user">
-                    <figcaption>
-                        <h4 class ="element--size-small">David Suns</h4>
-                        <span class ="element--size-small">Brand Manager</span>
-                    </figcaption>
-                </figure>
+                <a href ="">
+                    <img class ="article__image" src ="./assets/articles.png" alt ="Photo of social media" loading ="lazy">
+                    <h2 class ="article__title">5 tips for Better Branding</h2>
+                    <p class ="article__content">From SEO to integrating with Paid Advertising, this article covers it all.</p>
+                    <figure class ="article__figure container--flex container--flex--align container--flex--column-gap" loading ="lazy">
+                        <img class ="figure__image" src ="./assets/avatar_3.png" alt ="Photo of profile of user">
+                        <figcaption>
+                            <h4 class ="element--size-small figcap__title">David Suns</h4>
+                            <span class ="element--size-small figcap__span">Brand Manager</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </article>
         </main>
 
